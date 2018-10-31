@@ -1,0 +1,48 @@
+{% extends 'phoneBase.html' %}
+
+{% block phoneList %}
+    <script>
+        function detail(obj) {
+            var model = obj.innerHTML;
+            window.location.href = '/myapp/getdetail/?model='+model
+        }
+    </script>
+    <div class="gorssBox">
+			<div class="selectBox">
+				<div class="" style="">信用 </div>
+				<div class="" style="left: 100px;">时间</div>
+				<div class="" style="left: 180px;">价格</div>
+			</div>
+         <div id="filling">
+            {% for foo in phoneInfo %}
+			<div class="infoBox">
+				<div id="picture">
+					<img src="{{ foo.phoneImgUrl }}" width="180" height="126px" style="margin: 10px 7px"/>		</div>
+                <!--此处为商品名-->
+                <div class="phoneInfo" ><a id="model" onclick="detail(this)">{{ foo.phoneMode }}</a>
+                   <a id="degree">9成新</a>
+                </div>
+
+				<p id="yuan" >¥
+					<a id="price">	<!--此处为价格-->  {{ foo.phonePrice }}  </a></p>
+				<div id="commodity_detail" ><!-- 此处为描述-->  {{ foo.phoneDetail }}  </div>
+
+				<a name="Area"><!--此处为地区-->  {{ foo.area }}	</a>
+				<div class="merchant_detail">		</div>
+			</div>
+		    {% endfor %}
+           </div>
+		</div>
+
+{#此处为分页#}
+    <div class="page" >
+
+            <a onclick="lastPage()"><上一页</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <a>这是第<input type="text" value="{{ num }}" id="pageNum"/>页</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <a>跳页</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <a onclick="nextPage()">下一页></a>&nbsp;<a>共{{ PageNum }}页</a>
+        <input type="hidden" value={{ PageNum }} id="grossPages">
+        <input type="hidden" value="{{ model }}" id="UrlModel">
+
+            </div>
+{% endblock %}

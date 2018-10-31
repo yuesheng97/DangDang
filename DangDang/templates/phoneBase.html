@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<link rel="stylesheet" href="/static/css/phonelist_style.css" />
+        <link rel="stylesheet" href="/static/css/base_style.css" />
+        <script src="/static/js/jquery-3.3.1.js"></script>
+        <script type="application/javascript" src="/static/js/phonelist_js.js"></script>
+
+
+	</head>
+    <script>
+
+        function nate(pObject) {
+            var model = pObject.innerText;
+            location.replace('/myapp/phone/'+model+'/1');
+        }
+    </script>
+
+
+	<body onload="func(),func1(),func2()">
+{#    此处为顶部搜索框以及LOGO#}
+        <div class="top">
+			<div class="top_location">
+				<div class="location_city">
+					<a>武汉市</a><img src="/static/img/base_imgs/右.png" width="13px"/>
+				</div>
+				<div class="location_district">
+					<a>武昌区</a>
+					<img src="/static/img/base_imgs/右.png" width="13px"/></div>
+				<div class="location_college">
+					<!--<a>武汉大学</a><img src="img/右.png" width="13px"/>-->
+				</div>
+				<div class="top_login">
+					<a style="color: #28BFAC;">亲,请登录</a>
+					<a>立即注册</a>
+				</div>
+			</div>
+			<div class="top_navigate">
+				<a>我的铛铛</a><a>|</a>		<a>购物车</a><a>|</a>		<a>收藏夹</a><a>|</a>
+				<a>卖家中心</a><a>|</a>		<a>联系客服</a><a>|</a>		<a>网址导航</a>
+			</div>
+		</div>
+         <div class="top_frame">
+		<!--此处为搜索框-->
+		<div class="searchBox">
+			<input type="text" placeholder="请输入你想搜索的信息,如物品、商家、地区">
+			<div class="searchBut"><img src="/static/img/base_imgs/搜索.png" style="position: absolute;width: 30px;height: 30px;right: 25px;z-index: 2;padding: 7.5px 5px;;"></div>
+			<div class="searchBac"></div>
+			<div class="searchHint">
+			<a>武汉大学</a><a>洪山区</a><a>iphoneX</a><a>笔记本电脑</a><a>金融港</a><a>光谷</a>
+			</div>
+		</div>
+		<!--此处为右边图标-->
+		<div class="top_safeguard">
+			<img src="/static/img/base_imgs/安全保障.png" />
+			<img src="/static/img/base_imgs/支付宝.png" />
+			<img src="/static/img/base_imgs/沟通.png" />
+			<div class="top_safeguard_text">
+			<a>担保交易</a><a>在线支付</a><a>便捷沟通</a></div>
+		</div>
+		<!--此处为logo-->
+		<div class="logo">
+			<img src="/static/img/base_imgs/font.png" width="100px" onclick="window.location.href='/'"/>
+			<img src="/static/img/base_imgs/alphabet.png" width="140px"/>
+		</div>
+        </div>
+
+        {#        此处为筛选框   #}
+        <div class="select" >
+			<div class="bigselect">
+				<div class="model">
+					<a>品牌</a><a href="/myapp/phone/gross/1">全部</a>   				</div>
+				<div class="price">
+					<a>价格</a><a>全部</a>				</div>
+				<div class="screen">
+					<a>特性</a><a>全部</a>				</div>
+			</div>
+
+			<div class="modelData">
+				<ul id="u1">				</ul></div>
+			<div class="priceData">
+                <ul id="u2">				</ul></div>
+			<div class="screenData">
+				<ul id="u3">				</ul></div>
+		</div>
+
+
+        {% block phoneList %}
+        
+        {% endblock %}
+	</body>
+</html>

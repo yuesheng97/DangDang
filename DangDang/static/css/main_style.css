@@ -1,0 +1,41 @@
+.left{border: 1px solid #2bb6aa;position: absolute;width: 210px;height: 510px;top: 0;left: 0;background: #28BFAC;}
+
+.navigate{top: 50px;width: 210px;height: 460px;background: -webkit-linear-gradient(-90deg,rgba(2,181,157,.85) 2%,rgba(22,146,183,.85) 100%);position: absolute;}
+.navigate li{height: 30px;list-style: none;color: #fff;cursor: pointer;z-index: 2;margin-left: -40px;padding-top: 10px;
+                padding-bottom: -10px;padding-left: 40px;text-decoration: none;}
+.navigate_head{font-size: 20px;color: #fff;margin: 13px 15px;font-family: '新宋体';}
+.navigate a {text-decoration: none;color: #fff;}
+ li:hover{background: #53C9BE;}
+.navigate img{width: 20px;position: absolute;right: 180px;}
+.ImgArea{width: 720px;height: 510px;position: absolute;left: 223px;background: #fff;top: 0;}
+.ImgArea_alternate{position: absolute;width: 750px;height: 382px;top: 0;}
+.ImgArea_alternate img{width: 720px;}
+
+
+.self_Info{position: absolute;width: 230px;height: 510px;top: 0;right: 0;overflow: hidden}
+.loginBox{width: 230px;height: 320px;position: absolute;top: 190px;background: #f7f7f7}
+.loginBox_head{width: 80px;height: 80px;position: absolute;left: 50%;margin-left: -40px;top: 25px;border-radius: 110px;border: 1px solid #28BFAC;z-index: 2;background: #fff}
+.loginBox input[type=button]{width: 150px;height: 35px;position: absolute;left: 50%;margin-left: -75px;outline: none;border-radius: 20px;
+border: 2px solid #28BFAC;background: #fff;color: #28BFAC;transition: 1s;font-size: 16px}
+.loginBox input[type=button]:hover{color: #fff;background: #28BFAC}
+
+.soldAndPurchase{width: 230px;position: absolute;height:180px;background: #f7f7f7 ;border-radius: 5px}
+.soldAndPurchase img{position: absolute;left: 140px;width: 20px;height: 20px;top: 8px}
+.right_sold{width: 200px;height: 60px;position: absolute;top:20px;left: 20px;background: #fff;border-radius: 5px}
+.right_sold_Title{width: 170px;height: 30px;font-size: 24px;padding-left: 30px;margin-top: 3px}
+.right_sold_content{position: absolute;width: 170px;margin-left: 30px;top: 35px;font-size: 14px}
+.right_purchase{width: 200px;height: 60px;position: absolute;top:100px;left: 20px;background: #fff;border-radius: 5px}
+
+.foot{width: 100%;position: relative;bottom: 10px;height: 80px;background: #F8F8F8;}
+.footInfo{width: 600px;height: 80px;position: absolute;	left: 50%;margin-left: -300px;color: #999;top: 20px}
+.footInfo a,p{font-size: 13px;margin-right: 10px;}
+.footInfo a:hover{	color: #13D1BE;	cursor: pointer;}
+.footInfo p:hover{	color: #13D1BE;	cursor: pointer;}
+.float{width: 130px;height: 438px;left: 211px; position: absolute;z-index: 2;top: 16px;background: #fff; padding-left: 15px;
+    padding-right: 15px; display: none; padding-top: -50px;}
+.float p{    position: relative;    margin-right: 20px;    color: #999;}
+.float a{    text-decoration: none;}
+.float p:hover{    color: #28BFAC;}
+.floatTitle{    width: 130px;    height: 29px;    border-bottom: 1px solid #999;    padding-top: 10px;}
+.floatTitle a{color: #999;font-size: 20px}
+.navigate li:hover .float{ display: block;}

@@ -1,0 +1,120 @@
+{%  extends 'base.html'  %}
+{% block middle %}
+    <link rel="stylesheet" href="/static/css/main_style.css">
+
+    <div class="main_frame">
+    <div class="left">
+    	<div class="navigate_head" >全部分类</div>
+
+        <div class="navigate">
+            <ul>
+        <li ><img src="/static/img/main_imgs/数码.png" ><a href="/myapp/phone/gross/1">手机/平板</a>
+            <ul class="float">
+                <div class="floatTitle" ><a>手机/平板</a></div>
+                <a href='/myapp/phone/苹果/1'><p >iPhone</p></a>
+                <a href="/myapp/phone/华为/1"><p>华为</p></a>
+                <a href="/myapp/phone/魅族/1"><p>魅族</p></a>
+                <a href="/myapp/phone/小米/1"><p>小米</p></a>
+                <a href="/myapp/phone/oppo/1"><p>OPPO</p></a>
+                <a href="/myapp/phone/索尼/1"><p>索尼</p></a>
+                <a href="/myapp/phone/vivo/1"><p>vivo</p></a>
+                <p>佳能</p></ul></li>
+        <li><img src="/static/img/main_imgs/衣服.png">男装/女装
+            <ul class="float">
+                <div class="floatTitle"><a>男装/女装</a></div>
+                <p>秋季上新</p><a href="#"><p>针织衫</p></a><p>连衣裙</p><p>围巾</p><p>风衣</p>
+                <p>外套</p><p>内衣</p><p>牛仔裤</p></ul></li>
+        <li><img src="/static/img/main_imgs/鞋_箱包.png">箱包/鞋靴
+            <ul class="float">
+                <div class="floatTitle"><a>箱包/鞋靴</a></div>
+                <p>女包</p><a href="#"><p>休闲鞋</p></a><p>男包</p><p>旅行包</p><p>阿迪达斯</p>
+                <p>耐克</p><p>篮球鞋</p><p>阿玛尼</p></ul></li>
+        <li><img src="/static/img/main_imgs/化妆品.png">美妆/洗护
+        <ul class="float">
+                <div class="floatTitle"><a>美妆/洗护</a></div>
+                <p>洗发水</p><a href="#"><p>护发素</p></a><p>口红</p><p>洗手液</p><p>厨房清洁</p>
+                <p>卫生纸</p></ul></li>
+        <li><img src="/static/img/main_imgs/宝.png">珠宝/手表
+            <ul class="float">
+                <div class="floatTitle"><a>珠宝/手表</a></div>
+                <p>琥珀</p><a href="#"><p>钻石</p></a><p>卡西欧</p><p>运动表</p><p>黄金</p>
+                <p>铂金</p><p>智能手表</p></ul></li>
+        <li><img src="/static/img/main_imgs/汽车.png">汽车/用品
+            <ul class="float">
+                <div class="floatTitle"><a>汽车/用品</a></div>
+                <p>二手车</p><a href="#"><p>雪佛兰</p></a><p>大众</p><p>行车记录仪</p><p>坐垫</p>
+                <p>轮胎</p><p>车蜡</p><p>车挂</p></ul></li>
+        <li><img src="/static/img/main_imgs/运动户外.png">户外/乐器
+            <ul class="float">
+                <div class="floatTitle"><a>户外/乐器</a></div>
+                <p>帐篷</p><a href="#"><p>运动鞋</p></a><p>望远镜</p><p>电子琴</p><p>手风琴</p>
+                <p>唢呐</p><p>登山包</p><p>山地车</p></ul></li>
+        <li><img src="/static/img/main_imgs/游戏.png">游戏/点券
+            <ul class="float">
+                <div class="floatTitle"><a>游戏/点券</a></div>
+                <p>英雄联盟</p><a href="#"><p>PUBG</p></a><p>QQ点券</p><p>黄钻</p><p>QQ飞车</p>
+                <p>守望先锋</p></ul></li>
+        <li><img src="/static/img/main_imgs/工具.png">工具/建材
+            <ul class="float">
+                <div class="floatTitle"><a>工具/建材</a></div>
+                <p>电锯</p><a href="#"><p>螺丝刀</p></a><p>马桶</p><p>台灯</p><p>客厅灯</p>
+                <p>沙发</p><p>扳手</p></ul></li>
+        <li><img src="/static/img/main_imgs/办公.png">办公/DIY
+            <ul class="float">
+                <div class="floatTitle"><a>办公/DIY</a></div>
+                <p>显示器</p><a href="#"><p>机箱</p></a><p>显卡</p><p>CPU</p><p>散热器</p>
+                <p>打印机</p><p>订书钉</p></ul></li>
+        <li><img src="/static/img/main_imgs/生活百货.png">百货/餐厨
+            <ul class="float">
+                <div class="floatTitle"><a>男装/女装</a></div>
+                <p>电磁炉</p><a href="#"><p>砧板</p></a><p>菜刀</p><p>围裙</p><p>卫生纸</p>
+                <p>垃圾袋</p><p>锅铲</p><p>漏勺</p></ul></li>
+    </ul>
+        </div>
+    </div>
+
+    <div class="ImgArea">
+        <div class="ImgArea_alternate">
+            <img src="/static/img/main_imgs/书籍.png">
+        </div>
+        <img src="/static/img/main_imgs/女装馆.jpg" style="position: absolute;top: 380px" width="233px" height="130px">
+        <img src="/static/img/main_imgs/个护馆.png" style="position: absolute;top: 380px;left: 243px" width="233px" height="130px">
+        <img src="/static/img/main_imgs/名鞋馆.png" style="position: absolute;top: 380px;left: 486px" width="233px" height="130px">
+
+    </div>
+    <div class="self_Info">
+        <div class="soldAndPurchase">
+            <div class="right_sold">
+                <div class="right_sold_Title">我要发布<img src="/static/img/main_imgs/右(1).png"> </div>
+                <div class="right_sold_content">闲置换钱,快速出手</div>
+            </div>
+            <div class="right_purchase">
+                <div class="right_sold_Title">我要转卖<img src="/static/img/main_imgs/右(1).png"> </div>
+                <div class="right_sold_content">转卖已到手的宝贝</div>
+            </div>
+        </div>
+        <div class="loginBox">
+                <div class="loginBox_head"><img src="/static/img/main_imgs/个人%20(2).png" width="80px"></div>
+            <p style="position: absolute;top: 100px;left: 35%;font-size: 16px">亲,请登录~</p>
+            <input type="button" value="登录" style="top: 175px">
+            <input type="button" value="注册" style="top: 225px">
+        </div>
+    </div>
+        </div>
+    <!--此处为底部A连接-->
+		<div class="foot">
+		<div class="footInfo">
+			<div class="footA" style="position: absolute;left: 60px;">
+			<a>服务条款</a><a>|</a><a>隐私政策</a><a>|</a><a>铛铛客服</a><a>|</a>
+			<a>商务合作</a><a>|</a><a>关于团队</a><a>|</a><a>网站导航</a></div>
+			<p style="position: absolute;top: 14px; left: 100px;">COPYRIGHT © 2018 – 2020 DANGDANG. ALL RIGHTS RESERVED.</p>
+			<p style="position: absolute;top: 36px;left: 40%;">铛铛公司 版权所有</p>
+		</div>
+	</div>
+{#    <div class="" style="position: fixed;width: 170px;height: 300px;right: -20px; top: 25%;border-radius: 20px;overflow: hidden">#}
+{#    <img src="/static/img/main_imgs/advertising2.jpg" width="170px" height="300px">#}
+{#    </div>#}
+{#    <div class="" style="position: fixed;width: 170px;height: 300px;left: -20px; top: 25%;border-radius: 20px;overflow: hidden">#}
+{#        <img src="/static/img/main_imgs/cloth.jpg" width="170px" height="300px">#}
+{#    </div>#}
+    {% endblock %}

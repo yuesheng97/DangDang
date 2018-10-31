@@ -1,0 +1,31 @@
+.top{position: fixed;top: -5px;width: 100%;height: 45px;background-color: #f8f8f8;z-index: 5;}
+.top_navigate{width: 50%;height: 30px;position: absolute;left: 60%;top: 10px;}
+.top_location{width: 600px;height: 30px;position: absolute;left: 10%;top: 10px;float: left;}
+.top a{text-decoration: none;margin-right: 15px;color: #999;font-size: 14px;}
+.top a:hover{color: #13D1BE;cursor: pointer;}
+
+.location_city{width: 65px;height: 30px;position: absolute;}
+.top_location img{position: absolute;right: 3px;transform: rotate(90deg);top: 6px;}
+.location_district{width: 65px;height: 30px;position: absolute;left: 80px;}
+.location_college{width: 80px;height: 30px;position: absolute;left: 160px;}
+.top_login{position: absolute;width: 200px;height: 30px;left: 320px;}
+
+.searchBox{position: absolute;width: 600px;height: 40px;left: 49%;margin-left: -300px;top: 15px;}
+.searchBox input[type=text]{width: 585px;height: 37px;position: absolute;border-radius: 30px;outline: none;
+							border: 2px solid #13D1BE; padding-left: 15px;font-size: 16px;padding-top: 3px;}
+.searchBut{width: 80px;height: 45px;background: #13D1BE;position: absolute;right: -4px;border-radius: 30px;}
+.searchBac{width: 30px;height: 45px;background: #13D1BE;position: absolute;right:50px;}
+.searchHint{width: 500px;height: 20px;position: absolute; top: 50px;left: 20px;font-size: 13px;}
+.searchHint a{margin-right: 35px;color: #999;cursor: pointer}
+.searchHint a:hover{color: #28BFAC;}
+
+.top_safeguard{position: absolute;width: 300px;height: 60px;left: 970px;top: 10%;-webkit-user-select: none;}
+.top_safeguard img{width: 35px;margin-right: 35px;}
+.top_safeguard_text{width: 300px;height: 20px;position: absolute;bottom: 0;margin-left: -7px;}
+.top_safeguard_text a{font-size: 13px;color: #999;margin-right: 23px;}
+.logo{width: 200px;height: 60px;position: absolute;left: 30px;top: 10px;}
+body{overflow-x: hidden}
+
+.main_frame{width: 1185px;height: 600px;position: relative;top: 65px;margin: 0 auto}
+
+.top_frame{width: 1185px;height: 90px;position: relative;margin:0 auto;top: 55px;}

@@ -1,0 +1,95 @@
+{% extends 'base.html' %}
+
+{% block middle %}
+    <link type="text/css" rel="stylesheet" href="/static/css/detail.css">
+    <script>
+    function subNum(){
+				var num = parseInt(document.getElementById("num").innerHTML);
+				var price = parseInt(document.getElementById("price").innerHTML);
+				if(num>1){
+					num -=1;
+					document.getElementById("num").innerHTML = num;
+					price = price/(num+1)*num;
+					document.getElementById("price").innerHTML = price
+				}
+
+			}
+			function addNum(){
+				var num = parseInt(document.getElementById("num").innerHTML);
+				num +=1;
+				document.getElementById("num").innerHTML = num;
+				var price = parseInt(document.getElementById("price").innerHTML);
+				price =price/(num-1)*num;
+				document.getElementById("price").innerHTML = price
+			}
+			function pay() {
+                var price = parseInt(document.getElementById("price").innerHTML);
+
+                document.getElementById("money").value=price;
+                document.getElementById("myform").submit()
+            }
+    </script>
+    <div class="detail-wrap">
+    </div>
+			<div class="gross">
+				<a style="margin-top: 10px;position: absolute;font-size: 12px;">{{ model }}</a>
+				<div class="detail-wrap2" >
+					<div class="detail">
+						<img width="430px" height="320px" src="{{ pimg }}" />
+						<div class="smallPic" ></div>
+						<div class="detail_text">
+							<h1>{{ model }}</h1>
+							<h2>此处为商品描述</h2>
+							<!--此处为价格-->
+
+
+							<div class="detail_price">
+								<span >优惠价</span>
+								<span style="left: 100px;font-size: 18px;color: #f90;">¥</span>
+								<span style="bottom: -5px;left: 118px;font-size: 38px;color: #f90;" id="price">{{ price }}</span>
+								<span style="left: 250px;color: #999;"><s >最高门店价:999元</s></span>
+								<span style="right: 0;color: #666;">月售 0 份</span>
+							</div>
+						<!--此处为购买套餐-->
+							<div class="detai_set" >
+								<span>套餐</span>
+								<div class="detai_set_catalog">
+									<span>
+										<a>官方标配</a>
+									</span>
+								</div>
+							</div>
+						<!--此处为购买数量-->
+							<div class="detail_num" >
+								<a>数量</a>
+								<div class="detail_num_change">
+									<div onclick="subNum()"><a>-</a></div>
+									<div style="left: 34px;" ><span id="num">1</span></div>
+									<div style="left: 68px;" onclick="addNum()"><a>+</a></div>
+								</div>
+							</div>
+
+                            <form method="POST" id="myform" action="/page1/">
+                                <input type="text" name="money" style="display: none" id="money">
+							    <input type="button"  value="立即抢购" onclick="pay()" />
+                            </form>
+
+							<!--发布日期-->
+							<div style="position: absolute;width: auto;height: 30px;top:340px ;">
+								<span>发布日期</span>
+								<span style="position: absolute;left: 100px;color: #666;top: 2px;width: 200px;">2018.10.31-11:22</span>
+							</div>
+							<div style="position: absolute;width: 100%;height: 50px;top: 470px;">
+								<span>服务承诺</span>
+								<div style="position: absolute;left: 100px;width: auto;height: 100%;top: 0;">
+									<span style="color: #666;">免预约 | 质量保证 | 当面/在线交易</span>
+								</div>
+							</div>
+
+						</div>
+					</div>
+
+				</div>
+			</div>
+
+{% endblock %}

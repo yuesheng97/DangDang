@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>铛铛</title>
+		<link rel="stylesheet" href="/static/css/base_style.css" >
+
+	</head>
+	<body>
+		<!--下方为顶部定位,导航栏等-->
+
+		<div class="top">
+			<div class="top_location">
+				<div class="location_city">
+					<a>武汉市</a><img src="/static/img/base_imgs/右.png" width="13px"/>
+				</div>
+				<div class="location_district">
+					<a>武昌区</a>
+					<img src="/static/img/base_imgs/右.png" width="13px"/></div>
+				<div class="location_college">
+					<!--<a>武汉大学</a><img src="img/右.png" width="13px"/>-->
+				</div>
+				<div class="top_login">
+					<a style="color: #28BFAC;">亲,请登录</a>
+					<a>立即注册</a>
+				</div>
+			</div>
+			<div class="top_navigate">
+				<a>我的铛铛</a><a>|</a>		<a>购物车</a><a>|</a>		<a>收藏夹</a><a>|</a>
+				<a>卖家中心</a><a>|</a>		<a>联系客服</a><a>|</a>		<a>网址导航</a>
+			</div>
+		</div>
+         <div class="top_frame">
+		<!--此处为搜索框-->
+		<div class="searchBox">
+			<input type="text" placeholder="请输入你想搜索的信息,如物品、商家、地区">
+			<div class="searchBut"><img src="/static/img/base_imgs/搜索.png" style="position: absolute;width: 30px;height: 30px;right: 25px;z-index: 2;padding: 7.5px 5px;;"></div>
+			<div class="searchBac"></div>
+			<div class="searchHint">
+			<a>武汉大学</a><a>洪山区</a><a>iphoneX</a><a>笔记本电脑</a><a>金融港</a><a>光谷</a>
+			</div>
+		</div>
+		<!--此处为右边图标-->
+		<div class="top_safeguard">
+			<img src="/static/img/base_imgs/安全保障.png" />
+			<img src="/static/img/base_imgs/支付宝.png" />
+			<img src="/static/img/base_imgs/沟通.png" />
+			<div class="top_safeguard_text">
+			<a>担保交易</a><a>在线支付</a><a>便捷沟通</a></div>
+		</div>
+		<!--此处为logo-->
+		<div class="logo">
+			<img src="/static/img/base_imgs/font.png" width="100px" onclick="location.replace('/')"/>
+			<img src="/static/img/base_imgs/alphabet.png" width="140px"/>
+		</div>
+        </div>
+		{% block middle %}
+
+		{% endblock %}
+
+	</body>
+</html>

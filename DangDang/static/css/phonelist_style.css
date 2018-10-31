@@ -1,0 +1,34 @@
+.gorssBox{position: relative;width: 950px;height: auto;border: 1px solid #e4e4e4;top: 120px;margin:10px auto;}
+
+.infoBox{position: relative;border-top: 1px solid #999;width: 900px;height: 170px;margin-left: 20px;}
+.selectBox{position: relative;width: 900px;height: 60px;}
+.selectBox div{position: absolute;width: 50px;height: 30px;left: 20px;top: 20px;color: #666;font-size: 18px;font-weight: 400;}
+.phoneInfo{width: 480px;height: 20px;position: absolute;left:220px;top: 15px}
+.infoBox a[id="model"]{font-size: 18px;letter-spacing: 1px;text-transform: uppercase;font-weight: bold}
+.infoBox a[id="degree"]{color: blue;border: 1px solid ;border-radius: 5px;position: relative}
+.infoBox p[id="yuan"]{color:red;position: absolute;left: 220px; top: 25px;letter-spacing: 2px;font-size: 19px;font-weight: bold}
+.infoBox p a[id="price"]{font-weight: 700;color: red;}
+.infoBox div[id="commodity_detail"]{position: absolute;width: 480px;height: 65px;left: 220px;top: 75px;font-size: 13px;color: #555}
+.infoBox a[name="Area"]{position: absolute;top: 136px;left: 220px;font-size: 13px;}
+.infoBox div[id="picture"]{position: absolute;width: 200px;height: 140px;top: 15px;}
+.merchant_detail{position: absolute;width: 180px;height: 150px;background: #f6f6f6;left: 720px;top: 10px;}
+
+.select{width: 950px;height: 300px;position: relative;border: 1px solid #e4e4e4;margin: 0 auto;top: 100px;}
+
+.bigselect{width: 180px;height: 300px;position: absolute;left: 0;}
+.model{width: 180px;height: 160px;position: absolute;padding-top: 15px;}
+
+.bigselect a{margin-left: 25px;margin-right: 15px;font-size: 16px;}
+.price{width: 180px;height: 100px;position: absolute;top: 140px;padding-top: 15px;}
+.screen{width: 180px;height: 80px;position: absolute;top: 215px;padding-top: 15px;}
+.modelData{width: 770px;height: 140px;position: absolute;left: 180px;border-bottom: 1px solid #e4e4e4;}
+.priceData{width: 770px;height: 80px;position: absolute;left: 180px;border-bottom: 1px solid #e4e4e4;top: 140px;}
+.screenData{width: 770px;height: 80px;position: absolute;left: 180px;top: 215px;}
+li{list-style: none;float: left;width: 100px;height: 30px;position: relative;margin-right: 50px;margin-left: -30px;}
+a{text-decoration: none;color: #666;}
+.select a:hover{color: #13d18e;cursor: pointer}
+
+.page{position: relative;top: 120px;width: 440px;height: 80px;margin: 0 auto;}
+.page input[type=text]{width: 20px;padding-left: 10px}
+
+
