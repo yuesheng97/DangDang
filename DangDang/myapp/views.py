@@ -7,6 +7,8 @@ from django.core.paginator import Paginator
 def Main(request):
     return render(request,'main.html')
 
+def signin(request):
+    return render(request,'register.html')
 
 def phoneTest(request,num):
     global p,pi
